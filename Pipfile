@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.6"
+
+[packages]
+psycopg2-binary = "*"
+django-heroku = "*"
+gunicorn = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+pygraphviz = "*"
+django-extensions = "*"
+django-rest-swagger = "*"
+redgreenunittest = "*"
+yapf = "*"
+
+[dev-packages]
+
+[scripts]
+migrate= "python manage.py migrate"
+start= "python manage.py runserver $IP:$PORT"
+tests= "python manage.py test api"
+prettier="yapf ./api --recursive"
