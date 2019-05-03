@@ -1,1 +1,1 @@
-# exercise-queue-management-python
+# exercise-queue-management-django
