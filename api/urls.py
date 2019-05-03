@@ -7,11 +7,12 @@ from django.urls import path, include
 from api import views
 
 def HomeView(request):
-    return HttpResponse("<h1>Not found</h1>Please type a valid endpoint URL like: <a href='/api/member/'>/api/member/</a>")
+    return HttpResponse("<h1>Hello!</h1>Please type a valid endpoint URL from api/urls.py")
 
 urlpatterns = [
     path('', HomeView),
-    path('member/', views.MembersView.as_view()),
-    path('member/<int:member_id>', views.MembersView.as_view()),
-    ## add the second path member/<id> here
+    ## add you api paths here
+    path('/next', views.QueueView),
+    path('/new', views.QueueView),
+    path('/all', views.QueueAllView),
 ]
