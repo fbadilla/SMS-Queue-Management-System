@@ -20,12 +20,12 @@ class QueueView(APIView):
         return Response(result, status=status.HTTP_200_OK)
 
     def post(self, request):
-        # fill this method and update the return
+        # add a new member to the queue
         result = None
         return Response(result, status=status.HTTP_200_OK)
 
-class QueueView(APIView):
+class QueueAllView(APIView):
     def get(self, request):
-        # fill this method and update the return
+        # respond a json with all the queue items
         result = None
         return Response(result, status=status.HTTP_200_OK)
