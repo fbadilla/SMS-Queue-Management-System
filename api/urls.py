@@ -12,7 +12,7 @@ def HomeView(request):
 urlpatterns = [
     path('', HomeView),
     ## add you api paths here
-    path('/next', views.QueueView),
-    path('/new', views.QueueView),
-    path('/all', views.QueueAllView),
+    path('next/', views.QueueView.as_view()),
+    path('new/', views.QueueView.as_view()),
+    path('all/', views.QueueAllView.as_view()),
 ]

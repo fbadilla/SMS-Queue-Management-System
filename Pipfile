@@ -17,6 +17,7 @@ django-extensions = "*"
 django-rest-swagger = "*"
 redgreenunittest = "*"
 yapf = "*"
+twilio = "*"
 
 [dev-packages]
 
